@@ -105,3 +105,13 @@ assert(
     ],
     "Exercise 10"
 );
+
+// Exercise 11
+// Write a function definition for a function named addOne that takes in a number and returns that number plus one
+
+function addOne (x) {
+    return x + 1;
+}
+// assert(addOne(2), 3, "Exercise 11");
+// assert(addOne(0), 1, "Exercise 11");
+// assert(addOne(positiveEvenNumber), positiveEvenNumber + 1, "Exercise 11");
