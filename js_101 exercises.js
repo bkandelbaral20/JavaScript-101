@@ -115,3 +115,14 @@ function addOne (x) {
 // assert(addOne(2), 3, "Exercise 11");
 // assert(addOne(0), 1, "Exercise 11");
 // assert(addOne(positiveEvenNumber), positiveEvenNumber + 1, "Exercise 11");
+
+// Exercise 12
+// Write a function definition named isPositive that takes in a number and returns true or false if that number is positive.
+function isPositive(x){
+        return x>0;
+}
+
+assert(isPositive(positiveOddNumber), true, "Exercise 12");
+assert(isPositive(positiveEvenNumber), true, "Exercise 12");
+assert(isPositive(negativeOddNumber), false, "Exercise 12");
+assert(isPositive(negativeEvenNumber), false, "Exercise 12");
