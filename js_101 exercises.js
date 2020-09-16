@@ -8,7 +8,7 @@ assert(onMarsRightNow, false, "Exercise 1");
 // Create a variable named fruits and assign it an array of strings containing the following fruits.
 // mango, banana, guava, kiwi, and strawberry.
 
-var fruits =["mango", "banana", "guava", "kiwi", "strawberry"]
+var fruits = ["mango", "banana", "guava", "kiwi", "strawberry"]
 assert(
     fruits,
     ["mango", "banana", "guava", "kiwi", "strawberry"],
@@ -57,7 +57,7 @@ assert(
 // Exercise 7
 // Given the array of numbers defined below, reverse the array of numbers that you created above.
 
-var someNumbers= numbers.reverse();
+var someNumbers = numbers.reverse();
 assert(someNumbers, [10, 9, 8, 7, 6, 5, 4, 3, 2, 1], "Exercise 7");
 
 // Exercise 8
@@ -70,3 +70,13 @@ assert(
     "Exercise 8"
 );
 vegetables.sort();
+
+// Exercise 9
+// Write the code necessary to sort the fruits in reverse alphabetical order
+fruits.sort();
+fruits.reverse();
+assert(
+    fruits,
+    ["tomato", "strawberry", "mango", "kiwi", "guava", "banana"],
+    "Exercise 9"
+);
