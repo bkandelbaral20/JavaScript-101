@@ -2,7 +2,6 @@
 // On the line below, create a variable named onMarsRightNow and assign it the boolean value of false
 
 var onMarsRightNow = false;
-
 assert(onMarsRightNow, false, "Exercise 1");
 
 // Exercise 2
@@ -10,7 +9,6 @@ assert(onMarsRightNow, false, "Exercise 1");
 // mango, banana, guava, kiwi, and strawberry.
 
 var fruits =["mango", "banana", "guava", "kiwi", "strawberry"]
-
 assert(
     fruits,
     ["mango", "banana", "guava", "kiwi", "strawberry"],
@@ -22,7 +20,6 @@ assert(
 //  eggplant, broccoli, carrot, cauliflower, and zucchini
 
 var vegetables = ["eggplant", "broccoli", "carrot", "cauliflower", "zucchini"]
-
 assert(
     vegetables,
     ["eggplant", "broccoli", "carrot", "cauliflower", "zucchini"],
@@ -33,7 +30,6 @@ assert(
 // Create a variable named numbers and assign it an array of numbers, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10
 
 var numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
-
 assert(numbers, [1, 2, 3, 4, 5, 6, 7, 8, 9, 10], "Exercise 4");
 
 // Exercise 5
@@ -41,7 +37,6 @@ assert(numbers, [1, 2, 3, 4, 5, 6, 7, 8, 9, 10], "Exercise 4");
 // *Hint* Recommend finding and using a built-in JS operation to add to an array rather than recreating the array.
 
 fruits.push("tomato");
-
 assert(
     fruits,
     ["mango", "banana", "guava", "kiwi", "strawberry", "tomato"],
@@ -53,7 +48,6 @@ assert(
 // Recommend using the built-in JS operation to add to an array.
 
 vegetables.push("tomato");
-
 assert(
     vegetables,
     ["eggplant", "broccoli", "carrot", "cauliflower", "zucchini", "tomato"],
@@ -64,6 +58,15 @@ assert(
 // Given the array of numbers defined below, reverse the array of numbers that you created above.
 
 var someNumbers= numbers.reverse();
-
-
 assert(someNumbers, [10, 9, 8, 7, 6, 5, 4, 3, 2, 1], "Exercise 7");
+
+// Exercise 8
+// Sort the vegetables in alphabetical order. Recommend finding a way to sort the array with a built-in method
+
+vegetables.sort();
+assert(
+    vegetables,
+    ["broccoli", "carrot", "cauliflower", "eggplant", "tomato", "zucchini"],
+    "Exercise 8"
+);
+vegetables.sort();
