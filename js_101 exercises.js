@@ -122,7 +122,18 @@ function isPositive(x){
         return x>0;
 }
 
-assert(isPositive(positiveOddNumber), true, "Exercise 12");
-assert(isPositive(positiveEvenNumber), true, "Exercise 12");
-assert(isPositive(negativeOddNumber), false, "Exercise 12");
-assert(isPositive(negativeEvenNumber), false, "Exercise 12");
+// assert(isPositive(positiveOddNumber), true, "Exercise 12");
+// assert(isPositive(positiveEvenNumber), true, "Exercise 12");
+// assert(isPositive(negativeOddNumber), false, "Exercise 12");
+// assert(isPositive(negativeEvenNumber), false, "Exercise 12");
+
+// Exercise 13
+// Write a function definition named isNegative that takes in a number and returns true or False if that number is negative.
+function isNegative(x){
+        return x<0;
+}
+
+// assert(isNegative(positiveOddNumber), false, "Exercise 13");
+// assert(isNegative(positiveEvenNumber), false, "Exercise 13");
+// assert(isNegative(negativeOddNumber), true, "Exercise 13");
+// assert(isNegative(negativeEvenNumber), true, "Exercise 13");
