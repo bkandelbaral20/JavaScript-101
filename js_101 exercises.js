@@ -121,7 +121,6 @@ function addOne (x) {
 function isPositive(x){
         return x>0;
 }
-
 // assert(isPositive(positiveOddNumber), true, "Exercise 12");
 // assert(isPositive(positiveEvenNumber), true, "Exercise 12");
 // assert(isPositive(negativeOddNumber), false, "Exercise 12");
@@ -137,3 +136,13 @@ function isNegative(x){
 // assert(isNegative(positiveEvenNumber), false, "Exercise 13");
 // assert(isNegative(negativeOddNumber), true, "Exercise 13");
 // assert(isNegative(negativeEvenNumber), true, "Exercise 13");
+
+// Write a function definition named isOdd that takes in a number and returns true or false if that number is odd.
+function isOdd(x){
+        return x%2 !== 0;
+}
+// assert(isOdd(positiveOddNumber), true, "Exercise 14");
+// assert(isOdd(positiveEvenNumber), false, "Exercise 14");
+// assert(isOdd(negativeOddNumber), true, "Exercise 14");
+// assert(isOdd(negativeEvenNumber), false, "Exercise 14");
+
