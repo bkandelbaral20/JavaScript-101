@@ -137,6 +137,7 @@ function isNegative(x){
 // assert(isNegative(negativeOddNumber), true, "Exercise 13");
 // assert(isNegative(negativeEvenNumber), true, "Exercise 13");
 
+//EXERCISE 14
 // Write a function definition named isOdd that takes in a number and returns true or false if that number is odd.
 function isOdd(x){
         return x%2 !== 0;
@@ -146,3 +147,13 @@ function isOdd(x){
 // assert(isOdd(negativeOddNumber), true, "Exercise 14");
 // assert(isOdd(negativeEvenNumber), false, "Exercise 14");
 
+// Exercise 15
+// Write a function definition named isEven that takes in a number and returns true or false if that number is even.
+function isEven(x){
+        return x%2 == 0;
+}
+// assert(isEven(2), true, "Exercise 15");
+// assert(isEven(positiveOddNumber), false, "Exercise 15");
+// assert(isEven(positiveEvenNumber), true, "Exercise 15");
+// assert(isEven(negativeOddNumber), false, "Exercise 15");
+// assert(isEven(negativeEvenNumber), true, "Exercise 15");
