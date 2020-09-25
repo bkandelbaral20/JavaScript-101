@@ -180,3 +180,13 @@ function isPositiveOdd (num){
 // assert(isPositiveOdd(positiveOddNumber), true, "Exercise 17");
 // assert(isPositiveOdd(positiveEvenNumber), false, "Exercise 17");
 // assert(isPositiveOdd(negativeOddNumber), false, "Exercise 17");
+
+// Exercise 18
+// Write a function definition named isPositiveEven that takes in a number and returns true or false if the value is both greater than zero and even
+function isPositiveEven (num){
+        return num>0 && num%2!=1;
+}
+
+// assert(isPositiveEven(4), true, "Exercise 18");
+// assert(isPositiveEven(positiveOddNumber), false, "Exercise 18");
+// assert(isPositiveEven(positiveEvenNumber), true, "Exercise 18");
