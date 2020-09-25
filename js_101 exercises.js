@@ -157,3 +157,15 @@ function isEven(x){
 // assert(isEven(positiveEvenNumber), true, "Exercise 15");
 // assert(isEven(negativeOddNumber), false, "Exercise 15");
 // assert(isEven(negativeEvenNumber), true, "Exercise 15");
+
+// Exercise 16
+// Write a function definition named identity that takes in any input and returns that input. Don't overthink this one!
+
+function identity (x){
+        return x;
+}
+
+// assert(identity(fruits), fruits, "Exercise 16");
+// assert(identity(vegetables), vegetables, "Exercise 16");
+// assert(identity(positiveOddNumber), positiveOddNumber, "Exercise 16");
+// assert(identity(positiveEvenNumber), positiveEvenNumber, "Exercise 16");
