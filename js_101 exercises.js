@@ -202,3 +202,16 @@ console.log(isNegativeOdd(-3));
 // assert(isNegativeOdd(positiveOddNumber), false, "Exercise 19");
 // assert(isNegativeOdd(positiveEvenNumber), false, "Exercise 19");
 // assert(isNegativeOdd(negativeOddNumber), true, "Exercise 19");
+
+
+// Exercise 20
+// Write a function definition named isNegativeEven that takes in a number and returns true or false if the value is
+// both less than zero and even.
+function isNegativeEven (num){
+        return num<0 && num%2 ==0;
+}
+
+// assert(isNegativeEven(-4), true, "Exercise 20");
+// assert(isNegativeEven(positiveOddNumber), false, "Exercise 20");
+// assert(isNegativeEven(positiveEvenNumber), false, "Exercise 20");
+// assert(isNegativeEven(negativeOddNumber), false, "Exercise 20");
