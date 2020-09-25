@@ -190,3 +190,15 @@ function isPositiveEven (num){
 // assert(isPositiveEven(4), true, "Exercise 18");
 // assert(isPositiveEven(positiveOddNumber), false, "Exercise 18");
 // assert(isPositiveEven(positiveEvenNumber), true, "Exercise 18");
+
+// Exercise 19
+// Write a function definition named isNegativeOdd that takes in a number and returns true or false if the value is both less than zero and odd.
+function isNegativeOdd (num){
+        return num<0 && num%2 !=0;
+}
+console.log(isNegativeOdd(-3));
+
+// assert(isNegativeOdd(-3), true, "Exercise 19");
+// assert(isNegativeOdd(positiveOddNumber), false, "Exercise 19");
+// assert(isNegativeOdd(positiveEvenNumber), false, "Exercise 19");
+// assert(isNegativeOdd(negativeOddNumber), true, "Exercise 19");
