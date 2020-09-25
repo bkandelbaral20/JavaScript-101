@@ -169,3 +169,14 @@ function identity (x){
 // assert(identity(vegetables), vegetables, "Exercise 16");
 // assert(identity(positiveOddNumber), positiveOddNumber, "Exercise 16");
 // assert(identity(positiveEvenNumber), positiveEvenNumber, "Exercise 16");
+
+// Exercise 17
+// Write a function definition named isPositiveOdd that takes in a number and returns true or false if the value is both greater than zero and odd
+
+function isPositiveOdd (num){
+        return num>0 && num%2==1;
+}
+// assert(isPositiveOdd(3), true, "Exercise 17");
+// assert(isPositiveOdd(positiveOddNumber), true, "Exercise 17");
+// assert(isPositiveOdd(positiveEvenNumber), false, "Exercise 17");
+// assert(isPositiveOdd(negativeOddNumber), false, "Exercise 17");
