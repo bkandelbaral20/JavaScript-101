@@ -248,3 +248,15 @@ function triple (x){
 // assert(triple(5), 15, "Exercise 23");
 // assert(triple(positiveOddNumber), positiveOddNumber * 3, "Exercise 23");
 // assert(triple(positiveEvenNumber), positiveEvenNumber * 3, "Exercise 23");
+
+// Exercise 24
+// Write a function definition named reverseSign that takes in a number and returns the provided number but with the
+// sign reversed.
+function reverseSign(num){
+        return num* -1;
+}
+// assert(reverseSign(4), -4, "Exercise 24");
+// assert(reverseSign(-5), 5, "Exercise 24");
+// assert(reverseSign(positiveOddNumber), positiveOddNumber * -1, "Exercise 24");
+// assert(reverseSign(positiveEvenNumber), positiveEvenNumber * -1, "Exercise 24");
+// assert(reverseSign(negativeOddNumber), negativeOddNumber * -1, "Exercise 24");
