@@ -294,8 +294,27 @@ function isMultipleOfFive(num){
 // Write a function definition named isMultipleOfBothThreeAndFive that takes in a number and returns true or false if the number is evenly divisible by both 3 and 5.
 
 function isMultipleOfBothThreeAndFive(num){
-        return num%5 ===0 && num%3 ===0;
+        return (num%5 === 0 && num%3 === 0);
 }
 // assert(isMultipleOfBothThreeAndFive(15), true, "Exercise 28");
 // assert(isMultipleOfBothThreeAndFive(45), true, "Exercise 28");
 // assert(isMultipleOfBothThreeAndFive(3), false, "Exercise 28");
+
+// Exercise 29
+// Write a function definition named square that takes in a number and returns the number times itself.
+
+function square(num){
+        return (Math.pow(num,2));
+}
+// assert(square(3), 9, "Exercise 29");
+// assert(square(2), 4, "Exercise 29");
+
+// Exercise 30
+// Write a function definition named add that takes in two numbers and returns the sum.
+function add (x,y){
+        return x+y;
+}
+
+// assert(add(3, 2), 5, "Exercise 30");
+// assert(add(10, -2), 8, "Exercise 30");
+// assert(add(5, 7), 12, "Exercise 30");
