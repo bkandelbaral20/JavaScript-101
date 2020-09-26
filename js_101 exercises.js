@@ -164,7 +164,6 @@ function isEven(x){
 function identity (x){
         return x;
 }
-
 // assert(identity(fruits), fruits, "Exercise 16");
 // assert(identity(vegetables), vegetables, "Exercise 16");
 // assert(identity(positiveOddNumber), positiveOddNumber, "Exercise 16");
@@ -174,7 +173,7 @@ function identity (x){
 // Write a function definition named isPositiveOdd that takes in a number and returns true or false if the value is both greater than zero and odd
 
 function isPositiveOdd (num){
-        return num>0 && num%2==1;
+        return (num>0 && num%2 === 1);
 }
 // assert(isPositiveOdd(3), true, "Exercise 17");
 // assert(isPositiveOdd(positiveOddNumber), true, "Exercise 17");
@@ -184,7 +183,7 @@ function isPositiveOdd (num){
 // Exercise 18
 // Write a function definition named isPositiveEven that takes in a number and returns true or false if the value is both greater than zero and even
 function isPositiveEven (num){
-        return num>0 && num%2!=1;
+        return (num>0 && num%2 !== 1);
 }
 
 // assert(isPositiveEven(4), true, "Exercise 18");
@@ -194,7 +193,7 @@ function isPositiveEven (num){
 // Exercise 19
 // Write a function definition named isNegativeOdd that takes in a number and returns true or false if the value is both less than zero and odd.
 function isNegativeOdd (num){
-        return num<0 && num%2 !=0;
+        return (num<0 && num%2 !==0);
 }
 console.log(isNegativeOdd(-3));
 
@@ -208,7 +207,7 @@ console.log(isNegativeOdd(-3));
 // Write a function definition named isNegativeEven that takes in a number and returns true or false if the value is
 // both less than zero and even.
 function isNegativeEven (num){
-        return num<0 && num%2 ==0;
+        return (num<0 && num%2 === 0);
 }
 
 // assert(isNegativeEven(-4), true, "Exercise 20");
@@ -219,7 +218,7 @@ function isNegativeEven (num){
 // Exercise 21
 // Write a function definition named half that takes in a number and returns half the provided number.
 function half (x){
-        return x * 1/2;
+        return (x * 1/2);
 }
 
 // assert(half(4), 2, "Exercise 21");
@@ -230,7 +229,7 @@ function half (x){
 // Exercise 22
 // Write a function definition named double that takes in a number and returns double the provided number.
 function double (x){
-        return 2*x;
+        return (2*x);
 }
 
 // assert(double(4), 8, "Exercise 22");
@@ -241,7 +240,7 @@ function double (x){
 // Exercise 23
 // Write a function definition named triple that takes in a number and returns triple the provided number.
 function triple (x){
-        return 3*x;
+        return (3*x);
 }
 
 // assert(triple(4), 12, "Exercise 23");
@@ -264,7 +263,7 @@ function reverseSign(num){
 // Exercise 25
 // Write a function definition named absoluteValue that takes in a number and returns the absolute value of the provided number
 function absoluteValue(num){
-        return Math.abs(num);
+        return (Math.abs(num));
 }
 
 // assert(absoluteValue(4), 4, "Exercise 25");
@@ -275,8 +274,28 @@ function absoluteValue(num){
 // Write a function definition named isMultipleOfThree that takes in a number and returns true or false if the number
 // is evenly divisible by 3.
 function isMultipleOfThree(num){
-        return num%3 ===0;
+        return (num % 3 === 0);
 }
 // assert(isMultipleOfThree(3), true, "Exercise 26");
 // assert(isMultipleOfThree(15), true, "Exercise 26");
 // assert(isMultipleOfThree(9), true, "Exercise 26");
+
+// Exercise 27
+// Write a function definition named isMultipleOfFive that takes in a number and returns true or false if the number is evenly divisible by 5.
+
+function isMultipleOfFive(num){
+        return (num%5 === 0);
+}
+// assert(isMultipleOfFive(3), false, "Exercise 27");
+// assert(isMultipleOfFive(15), true, "Exercise 27");
+// assert(isMultipleOfFive(9), false, "Exercise 27");
+
+// Exercise 28
+// Write a function definition named isMultipleOfBothThreeAndFive that takes in a number and returns true or false if the number is evenly divisible by both 3 and 5.
+
+function isMultipleOfBothThreeAndFive(num){
+        return num%5 ===0 && num%3 ===0;
+}
+// assert(isMultipleOfBothThreeAndFive(15), true, "Exercise 28");
+// assert(isMultipleOfBothThreeAndFive(45), true, "Exercise 28");
+// assert(isMultipleOfBothThreeAndFive(3), false, "Exercise 28");
