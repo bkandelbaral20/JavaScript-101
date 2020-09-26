@@ -215,3 +215,25 @@ function isNegativeEven (num){
 // assert(isNegativeEven(positiveOddNumber), false, "Exercise 20");
 // assert(isNegativeEven(positiveEvenNumber), false, "Exercise 20");
 // assert(isNegativeEven(negativeOddNumber), false, "Exercise 20");
+
+// Exercise 21
+// Write a function definition named half that takes in a number and returns half the provided number.
+function half (x){
+        return x * 1/2;
+}
+
+// assert(half(4), 2, "Exercise 21");
+// assert(half(5), 2.5, "Exercise 21");
+// assert(half(positiveOddNumber), positiveOddNumber / 2, "Exercise 21");
+// assert(half(positiveEvenNumber), positiveEvenNumber / 2, "Exercise 21");
+
+// Exercise 22
+// Write a function definition named double that takes in a number and returns double the provided number.
+function double (x){
+        return 2*x;
+}
+
+// assert(double(4), 8, "Exercise 22");
+// assert(double(5), 10, "Exercise 22");
+// assert(double(positiveOddNumber), positiveOddNumber * 2, "Exercise 22");
+// assert(double(positiveEvenNumber), positiveEvenNumber * 2, "Exercise 22");
