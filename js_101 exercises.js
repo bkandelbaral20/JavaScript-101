@@ -237,3 +237,14 @@ function double (x){
 // assert(double(5), 10, "Exercise 22");
 // assert(double(positiveOddNumber), positiveOddNumber * 2, "Exercise 22");
 // assert(double(positiveEvenNumber), positiveEvenNumber * 2, "Exercise 22");
+
+// Exercise 23
+// Write a function definition named triple that takes in a number and returns triple the provided number.
+function triple (x){
+        return 3*x;
+}
+
+// assert(triple(4), 12, "Exercise 23");
+// assert(triple(5), 15, "Exercise 23");
+// assert(triple(positiveOddNumber), positiveOddNumber * 3, "Exercise 23");
+// assert(triple(positiveEvenNumber), positiveEvenNumber * 3, "Exercise 23");
