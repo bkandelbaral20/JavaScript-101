@@ -318,3 +318,14 @@ function add (x,y){
 // assert(add(3, 2), 5, "Exercise 30");
 // assert(add(10, -2), 8, "Exercise 30");
 // assert(add(5, 7), 12, "Exercise 30");
+
+//Exercise 30
+// Write a function definition named add that takes in two numbers and returns the sum.
+
+function add (x,y){
+        return x+y;
+}
+
+// assert(add(3, 2), 5, "Exercise 30");
+// assert(add(10, -2), 8, "Exercise 30");
+// assert(add(5, 7), 12, "Exercise 30");
