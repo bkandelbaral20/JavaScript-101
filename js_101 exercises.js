@@ -319,13 +319,14 @@ function add (x,y){
 // assert(add(10, -2), 8, "Exercise 30");
 // assert(add(5, 7), 12, "Exercise 30");
 
-//Exercise 30
-// Write a function definition named add that takes in two numbers and returns the sum.
 
-function add (x,y){
-        return x+y;
+//Exercises 31
+// Write a function definition named cube that takes in a number and returns the number times itself, times
+// itself.
+
+function cube(x){
+        return Math.pow(x,3);
 }
 
-// assert(add(3, 2), 5, "Exercise 30");
-// assert(add(10, -2), 8, "Exercise 30");
-// assert(add(5, 7), 12, "Exercise 30");
+// assert(cube(3), 27, "Exercise 31");
+// assert(cube(2), 8, "Exercise 31");
