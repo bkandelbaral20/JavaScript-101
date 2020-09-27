@@ -330,3 +330,12 @@ function cube(x){
 
 // assert(cube(3), 27, "Exercise 31");
 // assert(cube(2), 8, "Exercise 31");
+
+// Exercise 32
+// Write a function definition named squareRoot that takes in a number and returns the square root of the provided
+// number
+
+function squareRoot(x){
+        return Math.sqrt(x);
+}
+
