@@ -355,3 +355,11 @@ function subtract(x,y){
 function multiply(x,y){
         return x*y;
 }
+
+// Exercise 35
+//  Write a function definition named divide that takes in two numbers and returns the first argument
+//  divided by the second argument.
+
+function divide(x,y){
+  return x/y;
+}
