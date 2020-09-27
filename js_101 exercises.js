@@ -339,3 +339,19 @@ function squareRoot(x){
         return Math.sqrt(x);
 }
 
+// Exercise 33
+// Write a function definition named subtract that takes in two numbers and returns the first minus the second
+// argument.
+
+function subtract(x,y){
+        return x-y;
+}
+
+
+/// Exercise 34
+//  Write a function definition named multiply that takes in two numbers and returns
+// the first times the second argument.
+
+function multiply(x,y){
+        return x*y;
+}
