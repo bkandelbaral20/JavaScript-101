@@ -383,3 +383,13 @@ function remainder(x,y){
 
 // assert(remainder(3, 3), 0, "Exercise 37");
 // assert(remainder(5, 2), 1, "Exercise 37");
+
+// Exercise 38
+// Write a function definition named sumOfSquares that takes in two numbers, squares each number, then returns the sum of both squares.
+
+function sumOfSquares(x,y){
+        return Math.pow(x,2) + Math.pow(y,2);
+}
+// assert(sumOfSquares(3, 2), 13, "Exercise 38");
+// assert(sumOfSquares(5, 2), 29, "Exercise 38");
+
