@@ -373,3 +373,13 @@ function quotient(x,y){
 
 // assert(quotient(27, 9), 3, "Exercise 36");
 // assert(quotient(5, 2), 2, "Exercise 36");
+
+// Exercise 37
+// Write a function definition named remainder that takes in two numbers and returns the remainder of first argument divided by the second argument.
+
+function remainder(x,y){
+        return x%y;
+}
+
+// assert(remainder(3, 3), 0, "Exercise 37");
+// assert(remainder(5, 2), 1, "Exercise 37");
