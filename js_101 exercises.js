@@ -363,3 +363,13 @@ function multiply(x,y){
 function divide(x,y){
   return x/y;
 }
+
+// Exercise 36
+// Write a function definition named quotient that takes in two numbers and returns the quotient of dividing the first argument by the second argument.
+
+function quotient(x,y){
+        return Math.floor(x/y);
+}
+
+// assert(quotient(27, 9), 3, "Exercise 36");
+// assert(quotient(5, 2), 2, "Exercise 36");
