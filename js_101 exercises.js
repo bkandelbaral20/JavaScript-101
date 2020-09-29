@@ -393,3 +393,21 @@ function sumOfSquares(x,y){
 // assert(sumOfSquares(3, 2), 13, "Exercise 38");
 // assert(sumOfSquares(5, 2), 29, "Exercise 38");
 
+// Exercises 39
+// Write a function definition named timesTwoPlusThree that takes in a number, multiplies it by two, adds 3 and returns the result.
+function timesTwoPlusThree(num){
+        return (2 * num) + 3
+}
+// assert(timesTwoPlusThree(0), 3, "Exercise 39");
+// assert(timesTwoPlusThree(1), 5, "Exercise 39");
+// assert(timesTwoPlusThree(2), 7, "Exercise 39");
+
+//Exercises 40
+//// Write a function definition named areaOfRectangle that takes in two numbers and returns the product.
+
+function areaOfRectangle(x,y){
+  return x*y;
+}
+
+// assert(areaOfRectangle(1, 3), 3, "Exercise 40");
+// assert(areaOfRectangle(5, 2), 10, "Exercise 40");
