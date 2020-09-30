@@ -411,3 +411,10 @@ function areaOfRectangle(x,y){
 
 // assert(areaOfRectangle(1, 3), 3, "Exercise 40");
 // assert(areaOfRectangle(5, 2), 10, "Exercise 40");
+
+// Exercise 41
+// Write a function definition named areaOfCircle that takes in a number representing a circle's radius and returns the area of the circle
+
+function areaOfCircle(x){
+  return Math.PI* Math.pow(x,2);
+}
