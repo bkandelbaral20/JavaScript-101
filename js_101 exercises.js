@@ -425,3 +425,15 @@ function areaOfCircle(x){
 function circumference(num){
         return 2*Math.PI*num;
 }
+
+// Exercise 43
+// Write a function definition named isVowel that takes in value and returns true if the value is a, e, i, o, u in upper or lower case.
+function isVowel(x) {
+        var myVowels = "aeiouAEIOU";
+        for (var i = 0; i < x.length; i++) {
+                if (myVowels.includes(x.charAt(i).toLowerCase())) {
+                        return true;
+                }
+                return false;
+        }
+}
