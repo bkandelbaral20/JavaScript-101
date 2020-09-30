@@ -437,3 +437,25 @@ function isVowel(x) {
                 return false;
         }
 }
+
+// assert(isVowel("a"), true, "Exercise 43");
+// assert(isVowel("U"), true, "Exercise 43");
+// assert(isVowel("banana"), false, "Exercise 43");
+
+// Exercise 44
+// Write a function definition named hasVowels that takes in value and returns true if the string contains any vowels.
+
+function hasVowels(value) {
+        var vowelstring = "aeiouAEIOU";
+        for (var x = 0; x < value.length; x++){
+                if (vowelstring.indexOf(value[x]) !== -1){
+                        return true;
+                }
+
+        }
+        return false;
+}
+
+// assert(hasVowels("banana"), true, "Exercise 44");
+// assert(hasVowels("ubuntu"), true, "Exercise 44");
+// assert(hasVowels("QQQQ"), false, "Exercise 44");
