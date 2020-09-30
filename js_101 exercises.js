@@ -418,3 +418,10 @@ function areaOfRectangle(x,y){
 function areaOfCircle(x){
   return Math.PI* Math.pow(x,2);
 }
+
+// Exercise 42
+// Write a function definition named circumference that takes in a number representing a circle's radius and returns the circumference.
+
+function circumference(num){
+        return 2*Math.PI*num;
+}
