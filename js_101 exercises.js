@@ -459,3 +459,23 @@ function hasVowels(value) {
 // assert(hasVowels("banana"), true, "Exercise 44");
 // assert(hasVowels("ubuntu"), true, "Exercise 44");
 // assert(hasVowels("QQQQ"), false, "Exercise 44");
+
+//EXERCISE 45
+// Write a function definition named countVowels that takes in value and returns the count of the nubmer of
+// vowels in a sequence.
+
+function countVowels(str) {
+        var count = 0;
+        var vowelString = "aeiouAEIOU";
+        for (var i = 0; i < str.length; i++) {
+                if (vowelString.includes(str[i].toLowerCase())) {
+                        return count++;
+                }
+        }
+        return count;
+}
+// assert(countVowels("banana"), 3, "Exercise 45");
+// assert(countVowels("ubuntu"), 3, "Exercise 45");
+// assert(countVowels("mango"), 2, "Exercise 45");
+// assert(countVowels("QQQQ"), 0, "Exercise 45");
+
