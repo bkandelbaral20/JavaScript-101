@@ -550,3 +550,12 @@ function startsAndEndsWithVowel(str){
 // assert(startsAndEndsWithVowel("banana"), false, "Exercise 49");
 // assert(startsAndEndsWithVowel("mango"), false, "Exercise 49");
 
+// Exercise 50`;
+// Write a function definition named first that takes in sequence and returns the first value of that sequence.
+
+function first(x){
+        return x[0];
+}
+
+// assert(first("ubuntu"), "u", "Exercise 50");
+// assert(first([1, 2, 3]), 1, "Exercise 50");
