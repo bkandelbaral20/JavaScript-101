@@ -514,4 +514,21 @@ function startsWithVowel(str){
 // assert(startsWithVowel("banana"), false, "Exercise 47");
 // assert(startsWithVowel("mango"), false, "Exercise 47");
 
+// Write a function definition named endsWithVowel that takes in string and true if the string ends with a vowel
+
+function endsWithVowel(str){
+        var myVowels="aeiouAEIOU";
+        var isPresent = false;
+        for(var i =0;i<str.length;i++){
+                if(myVowels.includes(str[str.length-1].toLowerCase())){
+                        isPresent = true;
+                }
+                return isPresent;
+        }
+}
+
+// assert(endsWithVowel("ubuntu"), true, "Exercise 48");
+// assert(endsWithVowel("banana"), true, "Exercise 48");
+// assert(endsWithVowel("mango"), true, "Exercise 48");
+
 
