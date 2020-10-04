@@ -496,4 +496,22 @@ function removeVowels(str){
 // assert(removeVowels("mango"), "mng", "Exercise 46");
 
 
+// Exercise 47
+// Write a function definition named startsWithVowel that takes in string and true if the string starts with a vowel
+
+function startsWithVowel(str){
+        var myVowels="aeiouAEIOU";
+        var isPresent = false;
+        for(var i =0;i<str.length;i++){
+                if(myVowels.includes(str[0].toLowerCase())){
+                        isPresent = true;
+                }
+                return isPresent;
+        }
+}
+
+// assert(startsWithVowel("ubuntu"), true, "Exercise 47");
+// assert(startsWithVowel("banana"), false, "Exercise 47");
+// assert(startsWithVowel("mango"), false, "Exercise 47");
+
 
