@@ -479,3 +479,21 @@ function countVowels(str) {
 // assert(countVowels("mango"), 2, "Exercise 45");
 // assert(countVowels("QQQQ"), 0, "Exercise 45");
 
+//Exercise 46
+// Write a function definition named removeVowels that takes in string and returns the string without any vowels
+function removeVowels(str){
+        var vowelstring = "aeiouAEIOU";
+        for (var i = 0; i < str.length; i++){
+                if (vowelstring.indexOf(str[i]) !== -1){
+                        str = str.replace(str[i],"");
+                }
+        }
+        return str;
+}
+
+// assert(removeVowels("banana"), "bnn", "Exercise 46");
+// assert(removeVowels("ubuntu"), "bnt", "Exercise 46");
+// assert(removeVowels("mango"), "mng", "Exercise 46");
+
+
+
