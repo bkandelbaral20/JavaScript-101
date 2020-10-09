@@ -593,3 +593,25 @@ function forth(x){
 // assert(forth([1, 2, 3, 4]), 4, "Exercise 53");
 // assert(forth(["JS", "is", "awesome", "right?"]), "right?", "Exercise 53");
 // addToDone("Exercise 53 is correct.");
+
+// Exercise 54
+// Write a function definition named last that takes in sequence and returns the last value of that sequence.
+
+function last(x){
+        return x[x.length-1];
+}
+
+// assert(last("ubuntu"), "u", "Exercise 54");
+// assert(last([1, 2, 3, 4]), 4, "Exercise 54");
+// assert(last(["JS", "is", "awesome"]), "awesome", "Exercise 54");
+
+
+//Exercise 55
+// Write a function definition named secondToLast that takes in sequence and returns the second to last value of that sequence.
+
+function secondToLast(x){
+        return x[x.length-2];
+}
+// assert(secondToLast("ubuntu"), "t", "Exercise 55");
+// assert(secondToLast([1, 2, 3, 4]), 3, "Exercise 55");
+// assert(secondToLast(["JS", "is", "awesome"]), "is", "Exercise 55");
