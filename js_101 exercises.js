@@ -580,3 +580,16 @@ function third(x){
 // assert(third("ubuntu"), "u", "Exercise 52");
 // assert(third([1, 2, 3]), 3, "Exercise 52");
 // assert(third(["JS", "is", "awesome"]), "awesome", "Exercise 52");
+
+
+// Exercise 53
+// Write a function definition named forth that takes in sequence and returns the forth value of that sequence.
+
+function forth(x){
+        return x[3];
+}
+
+// assert(forth("ubuntu"), "n", "Exercise 53");
+// assert(forth([1, 2, 3, 4]), 4, "Exercise 53");
+// assert(forth(["JS", "is", "awesome", "right?"]), "right?", "Exercise 53");
+// addToDone("Exercise 53 is correct.");
