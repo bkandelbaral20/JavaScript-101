@@ -569,3 +569,14 @@ function second(x){
 // assert(second("ubuntu"), "b", "Exercise 51");
 // assert(second([1, 2, 3]), 2, "Exercise 51");
 // assert(second(["JS", "is", "awesome"]), "is", "Exercise 51");
+
+
+// Exercise 52
+//  Write a function definition named third that takes in sequence and returns the third value of that sequence.
+//
+function third(x){
+  return x[2];
+}
+// assert(third("ubuntu"), "u", "Exercise 52");
+// assert(third([1, 2, 3]), 3, "Exercise 52");
+// assert(third(["JS", "is", "awesome"]), "awesome", "Exercise 52");
