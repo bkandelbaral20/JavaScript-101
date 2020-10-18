@@ -711,3 +711,26 @@ function mean(x) {
 // assert(mean([1, 2, 3, 4]), 2.5, "Exercise 61");
 // assert(mean([3, 3, 3]), 3, "Exercise 61");
 // assert(mean([1, 5, 6]), 4, "Exercise 61");
+
+// Exercise 62
+// Write a function definition named median that takes in sequence of numbers and returns the average value
+
+function median(num) {
+        if (num.length % 2 === 0) {
+                return (num[num.length / 2] + num[num.length / 2 - 1]) / 2;
+        } else {
+                return num[parseInt(num.length / 2)];
+        }
+}
+// assert(median([1, 2, 3, 4, 5]), 3.0, "Exercise 62");
+// assert(median([1, 2, 3]), 2.0, "Exercise 62");
+// assert(median([1, 5, 6]), 5.0, "Exercise 62");
+
+// Exercise 63
+// Write a function definition named maxMinusMin that takes in an array of numbers and returns the difference of the maximum minus theminimum.
+
+function maxMinusMin(numbers) {
+        //using sorting method for ascending numbers
+        numbers.sort();
+        return numbers[numbers.length - 1] - numbers[0];
+}
