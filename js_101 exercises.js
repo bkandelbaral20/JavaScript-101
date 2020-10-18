@@ -615,3 +615,34 @@ function secondToLast(x){
 // assert(secondToLast("ubuntu"), "t", "Exercise 55");
 // assert(secondToLast([1, 2, 3, 4]), 3, "Exercise 55");
 // assert(secondToLast(["JS", "is", "awesome"]), "is", "Exercise 55");
+
+// Exercise 56
+// Write a function definition named thirdToLast that takes in sequence and returns the third to last value of that sequence.
+
+function thirdToLast(x){
+        return x[x.length-3];
+}
+
+// assert(thirdToLast("ubuntu"), "n", "Exercise 56");
+// assert(thirdToLast([1, 2, 3, 4]), 2, "Exercise 56");
+// assert(thirdToLast(["JS", "is", "awesome"]), "JS", "Exercise 56");
+// assert(
+//     thirdToLast(["strawberry", "kiwi", "mango", "guava"]),
+//     "kiwi",
+//     "Exercise 56"
+// );
+
+// Exercise 57
+// Write a function definition named firstAndSecond that takes in sequence and returns the first and second value of that sequence as an array
+
+function firstAndSecond(x) {
+        return [first(x), second(x)];
+}
+
+// assert(firstAndSecond([1, 2, 3, 4]), [1, 2], "Exercise 57");
+// assert(firstAndSecond(["JS", "is", "awesome"]), ["JS", "is"], "Exercise 57");
+// assert(
+//     firstAndSecond(["strawberry", "kiwi", "mango", "guava"]),
+//     ["strawberry", "kiwi"],
+//     "Exercise 57"
+// );
