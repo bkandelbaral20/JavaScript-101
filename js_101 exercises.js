@@ -734,3 +734,30 @@ function maxMinusMin(numbers) {
         numbers.sort();
         return numbers[numbers.length - 1] - numbers[0];
 }
+
+// Exercise 64
+// Write a function definition named productOfAll that takes in sequence of numbers and returns the product of multiplying all the numbers together
+
+function productOfAll(numbers) {
+        var product = 1;
+        for (var i = 0; i < numbers.length; i++) {
+                product *= numbers[i];
+        }
+        return product;
+}
+
+// assert(productOfAll([1, 2, 3]), 6, "Exercise 64");
+// assert(productOfAll([3, 4, 5]), 60, "Exercise 64");
+// assert(productOfAll([2, 2, 3, 0]), 0, "Exercise 64");
+
+// Exercise 65
+// Write a function definition named getHighestNumber that takes in sequence of numbers and returns the largest number.
+
+function getHighestNumber(numbers) {
+        numbers.sort()
+        return numbers[numbers.length - 1];
+}
+
+// assert(getHighestNumber([1, 2, 3]), 3, "Exercise 65");
+// assert(getHighestNumber([1, 5, 2, 3, 4]), 5, "Exercise 65");
+// assert(getHighestNumber([5, 1, 2, 4, 9]), 9, "Exercise 65");
