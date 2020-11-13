@@ -754,6 +754,7 @@ function productOfAll(numbers) {
 // Write a function definition named getHighestNumber that takes in sequence of numbers and returns the largest number.
 
 function getHighestNumber(numbers) {
+        //arranging into ascending orders so that the last element will be the largest number
         numbers.sort()
         return numbers[numbers.length - 1];
 }
@@ -761,3 +762,19 @@ function getHighestNumber(numbers) {
 // assert(getHighestNumber([1, 2, 3]), 3, "Exercise 65");
 // assert(getHighestNumber([1, 5, 2, 3, 4]), 5, "Exercise 65");
 // assert(getHighestNumber([5, 1, 2, 4, 9]), 9, "Exercise 65");
+
+// Exercise 66
+// Write a function definition named getSmallestNumber that takes in sequence of numbers and returns the smallest number.
+
+function getSmallestNumber(numbers) {
+        //arranging into ascending orders so that the first element will be the smallest number
+        numbers.sort();
+        return numbers[0];
+}
+
+// assert(getSmallestNumber([1, 2, 3]), 1, "Exercise 66");
+// assert(getSmallestNumber([3, 5, 9, 8, 1]), 1, "Exercise 66");
+// assert(getSmallestNumber([8, 9, 4, 5, 7]), 4, "Exercise 66");
+
+
+
