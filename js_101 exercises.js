@@ -777,4 +777,24 @@ function getSmallestNumber(numbers) {
 // assert(getSmallestNumber([8, 9, 4, 5, 7]), 4, "Exercise 66");
 
 
+// Exercise 67
+// Write a function definition named onlyOddNumbers that takes in sequence of numbers and returns the odd numbers in an array.
 
+function onlyOddNumbers(numbers){
+        var newArrayNumber= [];
+        for (var i = 0; i < numbers.length; i++) {
+                if (Math.abs(numbers[i]) % 2 === 1) {
+                        newArrayNumber.push(numbers[i]);
+                }
+        }
+        return newArrayNumber;
+}
+
+// assert(onlyOddNumbers([1, 2, 3]), [1, 3], "Exercise 67");
+// assert(
+//     onlyOddNumbers([-5, -4, -3, -2, -1, 1, 2, 3, 4, 5]),
+//     [-5, -3, -1, 1, 3, 5],
+//     "Exercise 67"
+// );
+// assert(onlyOddNumbers([-4, -3, 1]), [-3, 1], "Exercise 67");
+// }
