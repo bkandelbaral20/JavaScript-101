@@ -819,3 +819,24 @@ console.log(onlyEvenNumbers(numbers));
 //   [-4, -2, 2, 4],
 //   "Exercise 68"
 // );
+
+// Exercise 69
+// Write a function definition named onlyPositiveNumbers that takes in sequence of numbers and returns the positive numbers in an array.
+
+function onlyPositiveNumbers(x) {
+        var newArray = [];
+        for (var i = 0; i < x.length; i++) {
+                if (x[i] > 0) {
+                        newArray.push(x[i]);
+                }
+        }
+        return newArray;
+}
+
+// assert(onlyPositiveNumbers([1, 2, 3]), [1, 2, 3], "Exercise 69");
+// assert(
+//     onlyPositiveNumbers([-5, -4, -3, -2, -1, 1, 2, 3, 4, 5]),
+//     [1, 2, 3, 4, 5],
+//     "Exercise 69"
+// );
+// assert(onlyPositiveNumbers([-4, -3, 1]), [1], "Exercise 69");
