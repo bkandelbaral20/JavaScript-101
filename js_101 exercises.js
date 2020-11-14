@@ -798,3 +798,24 @@ function onlyOddNumbers(numbers){
 // );
 // assert(onlyOddNumbers([-4, -3, 1]), [-3, 1], "Exercise 67");
 // }
+
+//// Exercise 68
+// // Write a function definition named onlyEvenNumbers that takes in sequence of numbers and returns the even numbers in an array.
+
+function onlyEvenNumbers(numbers) {
+  var newArray = [];
+  for (var i = 0; i < numbers.length; i++) {
+    if (Math.abs(numbers[i]) % 2 === 0) {
+      newArray.push(numbers[i]);
+    }
+  }
+  return newArray;
+}
+console.log(onlyEvenNumbers(numbers));
+
+// assert(onlyEvenNumbers([1, 2, 3]), [2], "Exercise 68");
+// assert(
+//   onlyEvenNumbers([-5, -4, -3, -2, -1, 1, 2, 3, 4, 5]),
+//   [-4, -2, 2, 4],
+//   "Exercise 68"
+// );
