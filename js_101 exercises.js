@@ -840,3 +840,25 @@ function onlyPositiveNumbers(x) {
 //     "Exercise 69"
 // );
 // assert(onlyPositiveNumbers([-4, -3, 1]), [1], "Exercise 69");
+
+
+// Exercise 70
+// Write a function definition named onlyNegativeNumbers that takes in sequence of numbers and returns the negative numbers in an array.
+
+function onlyNegativeNumbers(x) {
+        var newArray = [];
+        for (var i = 0; i < x.length; i++) {
+                if (x[i] < 0) {
+                        newArray.push(x[i]);
+                }
+        }
+        return newArray;
+}
+
+// assert(onlyNegativeNumbers([1, 2, 3]), [], "Exercise 70");
+// assert(
+//     onlyNegativeNumbers([-5, -4, -3, -2, -1, 1, 2, 3, 4, 5]),
+//     [-5, -4, -3, -2, -1],
+//     "Exercise 70"
+// );
+// assert(onlyNegativeNumbers([-4, -3, 1]), [-4, -3], "Exercise 70");
