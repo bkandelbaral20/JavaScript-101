@@ -875,3 +875,23 @@ function hasEvens(num) {
         return false;
 }
 
+// assert(hasEvens([1, 2, 3]), true, "Exercise 71");
+// assert(hasEvens([2, 5, 6]), true, "Exercise 71");
+// assert(hasEvens([3, 3, 3]), false, "Exercise 71");
+
+// Exercise 72
+// Write a function definition named countEvens that takes in sequence of numbers and returns the number of even numbers
+
+function countEvens(num){
+        var bucket=[];
+        for(var i=0; i < num.length; i++){
+                if(num[i] % 2 == 0) {
+                        bucket.push(num[i]);
+                }
+        }
+        return bucket.length;
+}
+
+// assert(countEvens([1, 2, 3]), 1, "Exercise 72");
+// assert(countEvens([2, 5, 6]), 2, "Exercise 72");
+// assert(countEvens([3, 3, 3]), 0, "Exercise 72");
