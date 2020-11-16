@@ -895,3 +895,19 @@ function countEvens(num){
 // assert(countEvens([1, 2, 3]), 1, "Exercise 72");
 // assert(countEvens([2, 5, 6]), 2, "Exercise 72");
 // assert(countEvens([3, 3, 3]), 0, "Exercise 72");
+
+// Exercise 73
+// Write a function definition named hasOdds that takes in sequence of numbers and returns true if there are any odd numbers in the sequence
+
+function hasOdds(num) {
+        for (var i = 0; i < num.length; i++) {
+                if (num[i] % 2 == 1) {
+                        return true;
+                }
+        }
+        return false;
+}
+
+// assert(hasOdds([1, 2, 3]), true, "Exercise 73");
+// assert(hasOdds([2, 5, 6]), true, "Exercise 73");
+// assert(hasOdds([3, 3, 3]), true, "Exercise 73");
