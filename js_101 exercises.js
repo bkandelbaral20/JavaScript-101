@@ -911,3 +911,21 @@ function hasOdds(num) {
 // assert(hasOdds([1, 2, 3]), true, "Exercise 73");
 // assert(hasOdds([2, 5, 6]), true, "Exercise 73");
 // assert(hasOdds([3, 3, 3]), true, "Exercise 73");
+
+// Exercise 74
+// Write a function definition named countOdds that takes in sequence of numbers and returns a count of the any odd numbers in the sequence
+
+function countOdds(num) {
+        var newArray = [];
+        for (var i = 0; i < num.length; i++) {
+                if (num[i] % 2 == 1) {
+                        newArray.push(num[i]);
+                }
+        }
+        return newArray.length;
+}
+
+// assert(countOdds([1, 2, 3]), 2, "Exercise 74");
+// assert(countOdds([2, 5, 6]), 1, "Exercise 74");
+// assert(countOdds([3, 3, 3]), 3, "Exercise 74");
+// assert(countOdds([2, 4, 6]), 0, "Exercise 74");
