@@ -862,3 +862,16 @@ function onlyNegativeNumbers(x) {
 //     "Exercise 70"
 // );
 // assert(onlyNegativeNumbers([-4, -3, 1]), [-4, -3], "Exercise 70");
+
+// Exercise 71
+// Write a function definition named hasEvens that takes in sequence of numbers and returns true if there are any even numbers in the sequence
+
+function hasEvens(num) {
+        for (var i = 0; i < num.length; i++) {
+                if (num[i] % 2 == 0) {
+                        return true;
+                }
+        }
+        return false;
+}
+
