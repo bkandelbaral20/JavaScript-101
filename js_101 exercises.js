@@ -961,3 +961,20 @@ function countPositives(num){
 // assert(countPositives([1, -2, 3]), 2, "Exercise 76");
 // assert(countPositives([2, -5, -6]), 1, "Exercise 76");
 // assert(countPositives([3, 3, 3]), 3, "Exercise 76");
+
+// Exercise 77
+// Write a function definition named onlyPositiveEvens that takes in sequence of numbers and returns an array containing all the positive evens from the sequence
+
+function onlyPositiveEvens(num) {
+        var bucket=[];
+        for(var i=0;i<num.length; i++){
+                if(num[i]>0 && num[i]%2 === 0){
+                        return bucket.push(num[i]);
+                }
+        }
+        return bucket;
+}
+
+// assert(onlyPositiveEvens([1, -2, 3]), [], "Exercise 77");
+// assert(onlyPositiveEvens([2, -5, -6]), [2], "Exercise 77");
+// assert(onlyPositiveEvens([3, 3, 4, 6]), [4, 6], "Exercise 77");
