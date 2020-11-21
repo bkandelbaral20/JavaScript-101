@@ -934,7 +934,7 @@ function countOdds(num) {
 // Write a function definition named countNegatives that takes in sequence of numbers and returns a count of the number of negative numbers
 
 function countNegatives(num){
-        var bucket= [];
+        var bucket = [];
         for (var i =0; i< num.length; i++){
                 if(num[i] < 0){
                         bucket.push(num[i]);
@@ -943,3 +943,21 @@ function countNegatives(num){
         return bucket.length;
 }
 
+// assert(countNegatives([1, -2, 3]), 1, "Exercise 75");
+// assert(countNegatives([2, -5, -6]), 2, "Exercise 75");
+
+
+// Exercise 76
+// Write a function definition named countPositives that takes in sequence of numbers and returns a count of the number of positive number
+function countPositives(num){
+        var bucket = [];
+        for (var i =0; i< num.length; i++){
+                if(num[i] > 0){
+                        bucket.push(num[i]);
+                }
+        }
+        return bucket.length;
+}
+// assert(countPositives([1, -2, 3]), 2, "Exercise 76");
+// assert(countPositives([2, -5, -6]), 1, "Exercise 76");
+// assert(countPositives([3, 3, 3]), 3, "Exercise 76");
