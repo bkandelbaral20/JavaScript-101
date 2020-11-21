@@ -929,3 +929,17 @@ function countOdds(num) {
 // assert(countOdds([2, 5, 6]), 1, "Exercise 74");
 // assert(countOdds([3, 3, 3]), 3, "Exercise 74");
 // assert(countOdds([2, 4, 6]), 0, "Exercise 74");
+
+// Exercise 75
+// Write a function definition named countNegatives that takes in sequence of numbers and returns a count of the number of negative numbers
+
+function countNegatives(num){
+        var bucket= [];
+        for (var i =0; i< num.length; i++){
+                if(num[i] < 0){
+                        bucket.push(num[i]);
+                }
+        }
+        return bucket.length;
+}
+
