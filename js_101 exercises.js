@@ -1029,3 +1029,26 @@ function onlyNegativeOdds(x) {
 // assert(onlyNegativeOdds([1, -2, 3]), [], "Exercise 80");
 // assert(onlyNegativeOdds([2, -5, -6]), [-5], "Exercise 80");
 // assert(onlyNegativeOdds([3, 3, 4, 6]), [], "Exercise 80");
+
+// Exercise 81
+// Write a function definition named shortestString that takes in an array of strings and returns the shortest string in the array.
+
+         function shortestString(x) {
+                 //lets assume it is first element
+                 var shortest = x[0];
+                 for (var i = 0; i < x.length; i++) {
+                         if (x[i].length < shortest.length) {
+                                 shortest = x[i];
+                         }
+                 }
+                 return shortest;
+         }
+
+// assert(shortestString(["kiwi", "mango", "strawberry"]), "kiwi", "Exercise 81");
+// assert(shortestString(["hello", "everybody"]), "hello", "Exercise 81");
+// assert(
+//     shortestString(["mary", "had", "a", "little", "lamb"]),
+//     "a",
+//     "Exercise 81"
+// );
+
