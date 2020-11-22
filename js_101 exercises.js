@@ -1052,3 +1052,28 @@ function onlyNegativeOdds(x) {
 //     "Exercise 81"
 // );
 
+// Exercise 82
+// Write a function definition named longestString that takes in sequence of strings and returns the longest string in the array.
+
+function longestString(x) {
+        var longest = x[0];
+        for (var i = 0; i < x.length; i++) {
+                if (x[i].length > longest.length) {
+                        longest = x[i];
+                }
+        }
+        return longest;
+}
+
+// assert(
+//     longestString(["kiwi", "mango", "strawberry"]),
+//     "strawberry",
+//     "Exercise 82"
+// );
+// assert(longestString(["hello", "everybody"]), "everybody", "Exercise 82");
+// assert(
+//     longestString(["mary", "had", "a", "little", "lamb"]),
+//     "little",
+//     "Exercise 82"
+// );
+
