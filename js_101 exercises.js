@@ -1012,3 +1012,20 @@ function onlyNegativeEvens(x) {
 // assert(onlyNegativeEvens([1, -2, 3]), [-2], "Exercise 79");
 // assert(onlyNegativeEvens([2, -5, -6]), [-6], "Exercise 79");
 // assert(onlyNegativeEvens([3, 3, 4, 6]), [], "Exercise 79");
+
+// Exercise 80
+// Write a function definition named onlyNegativeOdds that takes in sequence of numbers and returns an array containing all the negative odd numbers from the sequence
+
+function onlyNegativeOdds(x) {
+        var bucket = [];
+        for (var i = 0; i < x.length; i++) {
+                if ((x[i] < 0) && x[i] % 2 !== 0) {
+                        bucket.push(x[i]);
+                }
+        }
+        return bucket;
+}
+
+// assert(onlyNegativeOdds([1, -2, 3]), [], "Exercise 80");
+// assert(onlyNegativeOdds([2, -5, -6]), [-5], "Exercise 80");
+// assert(onlyNegativeOdds([3, 3, 4, 6]), [], "Exercise 80");
