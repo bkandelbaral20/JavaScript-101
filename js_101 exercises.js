@@ -978,3 +978,20 @@ function onlyPositiveEvens(num) {
 // assert(onlyPositiveEvens([1, -2, 3]), [], "Exercise 77");
 // assert(onlyPositiveEvens([2, -5, -6]), [2], "Exercise 77");
 // assert(onlyPositiveEvens([3, 3, 4, 6]), [4, 6], "Exercise 77");
+
+// Exercise 78
+// Write a function definition named onlyPositiveOdds that takes in sequence of numbers and returns an array containing all the positive odd numbers from the sequence
+
+function onlyPositiveOdds(num) {
+        var bucket=[];
+        for(var i=0;i<num.length; i++){
+                if(num[i]>0 && num[i]%2 === 1){
+                        return bucket.push(num[i]);
+                }
+        }
+        return bucket;
+}
+
+// assert(onlyPositiveOdds([1, -2, 3]), [1, 3], "Exercise 78");
+// assert(onlyPositiveOdds([2, -5, -6]), [], "Exercise 78");
+// assert(onlyPositiveOdds([3, 3, 4, 6]), [3, 3], "Exercise 78");
