@@ -995,3 +995,20 @@ function onlyPositiveOdds(num) {
 // assert(onlyPositiveOdds([1, -2, 3]), [1, 3], "Exercise 78");
 // assert(onlyPositiveOdds([2, -5, -6]), [], "Exercise 78");
 // assert(onlyPositiveOdds([3, 3, 4, 6]), [3, 3], "Exercise 78");
+
+// Exercise 79
+// Write a function definition named onlyNegativeEvens that takes in sequence of numbers and returns an array containing all the negative even numbers from the sequence
+
+function onlyNegativeEvens(x) {
+        var bucket = [];
+        for (var i = 0; i < x.length; i++) {
+                if (x[i] < 0 && x[i] % 2 === 0) {
+                        bucket.push(x[i]);
+                }
+        }
+        return bucket;
+}
+
+// assert(onlyNegativeEvens([1, -2, 3]), [-2], "Exercise 79");
+// assert(onlyNegativeEvens([2, -5, -6]), [-6], "Exercise 79");
+// assert(onlyNegativeEvens([3, 3, 4, 6]), [], "Exercise 79");
