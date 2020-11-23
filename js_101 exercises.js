@@ -1095,3 +1095,21 @@ function getUniqueValues(arr) {
 //     ["b", "a", "n", "s"],
 //     "Exercise 83"
 // );
+
+// Exercise 84
+// Write a function definition named elementsTimesTwo that takes in an array of numbers and returns an array with each value multiplied by 2.
+
+var arr = [1,2,3];
+function elementsTimesTwo(arr){
+        var bucket =[];
+        for(var i=0; i<arr.length; i++){
+                var double = arr[i]* arr[i];
+                bucket.push(double)
+        }
+        return bucket;
+}
+console.log(elementsTimesTwo(arr));
+
+// assert(elementsTimesTwo([1, 2, 3]), [2, 4, 6], "Exercise 84");
+// assert(elementsTimesTwo([0, 0, 0]), [0, 0, 0], "Exercise 84");
+// assert(elementsTimesTwo([5, 10, 15]), [10, 20, 30], "Exercise 84");
