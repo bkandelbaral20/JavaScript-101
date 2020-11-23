@@ -1077,3 +1077,21 @@ function longestString(x) {
 //     "Exercise 82"
 // );
 
+// Exercise 83
+// Write a function definition named getUniqueValues that takes in an array and returns an with only the unique values from that array.
+
+function getUniqueValues(arr) {
+        //Distinct array values  using Set and Array from a method
+        const result = Array.from(new Set(arr));
+}
+
+// assert(
+//     getUniqueValues(["ant", "ant", "mosquito", "mosquito", "ladybug"]),
+//     ["ant", "mosquito", "ladybug"],
+//     "Exercise 83"
+// );
+// assert(
+//     getUniqueValues(["b", "a", "n", "a", "n", "a", "s"]),
+//     ["b", "a", "n", "s"],
+//     "Exercise 83"
+// );
