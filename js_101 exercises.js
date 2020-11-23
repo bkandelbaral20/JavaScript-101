@@ -1103,7 +1103,7 @@ var arr = [1,2,3];
 function elementsTimesTwo(arr){
         var bucket =[];
         for(var i=0; i<arr.length; i++){
-                var double = arr[i]* arr[i];
+                var double = arr[i] + arr[i];
                 bucket.push(double)
         }
         return bucket;
@@ -1143,3 +1143,44 @@ console.log(addOneToArray(arr))
 
 // assert(addOneToArray([1, 2, 3]), [2, 3, 4], "Exercise 86");
 // assert(addOneToArray([4, 4, 4]), [5, 5, 5], "Exercise 86");
+
+// Working with JS Objects
+
+// The following objects
+const tukeyPaper = {
+        title: "The Future of Data Analysis",
+        author: "John W. Tukey",
+        link: "https://projecteuclid.org/euclid.aoms/1177704711",
+        year_published: 1962
+};
+
+const thomasPaper = {
+        title: "A mathematical model of glutathione metabolism",
+        author: "Rachel Thomas",
+        link: "https://www.ncbi.nlm.nih.gov/pubmed/18442411",
+        year_published: 2008
+};
+
+// Exercise 87
+// Write a function named getPaperTitle that takes in a object and returns the title property
+
+function getPaperTitle(varName){
+        return varName.title;
+}
+
+// assert(getPaperTitle(tukeyPaper), "The Future of Data Analysis", "Exercise 87");
+// assert(
+//     getPaperTitle(thomasPaper),
+//     "A mathematical model of glutathione metabolism",
+//     "Exercise 87"
+//);
+
+// Exercise 88
+// Write a function named getYearPublished that takes in an objects and returns the value behind the "year_published" key.
+
+function getYearPublished(varName) {
+return varName.year_published;
+}
+
+// assert(getYearPublished(tukeyPaper), 1962, "Exercise 88");
+// assert(getYearPublished(thomasPaper), 2008, "Exercise 88");
