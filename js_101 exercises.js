@@ -1127,3 +1127,19 @@ function flatten(arr){
 //     [1, 2, 3, 1, 2, 3, 1, 2, 3],
 //     "Exercise 85"
 // );
+
+// Exercise 86
+// Write a function definition named addOneToArray that adds one to every number in an array
+
+function addOneToArray(arr){
+        var bucket=[];
+        for(var i=0; i<arr.length;i++){
+                var addingOne = arr[i] + 1;
+                bucket.push(addingOne);
+        }
+        return bucket;
+}
+console.log(addOneToArray(arr))
+
+// assert(addOneToArray([1, 2, 3]), [2, 3, 4], "Exercise 86");
+// assert(addOneToArray([4, 4, 4]), [5, 5, 5], "Exercise 86");
