@@ -1113,3 +1113,17 @@ console.log(elementsTimesTwo(arr));
 // assert(elementsTimesTwo([1, 2, 3]), [2, 4, 6], "Exercise 84");
 // assert(elementsTimesTwo([0, 0, 0]), [0, 0, 0], "Exercise 84");
 // assert(elementsTimesTwo([5, 10, 15]), [10, 20, 30], "Exercise 84");
+
+// Exercise 85
+// Write a function named flatten that takes in an array of arrays. Return the flattened array.
+
+function flatten(arr){
+        // use the Array.flat() method to flatten the nested sub-arrays into the parent.
+            return arr.flat();
+}
+// assert(flatten([[1, 2], [3, 4], [5, 6]]), [1, 2, 3, 4, 5, 6], "Exercise 85");
+// assert(
+//     flatten([[1, 2, 3], [1, 2, 3], [1, 2, 3]]),
+//     [1, 2, 3, 1, 2, 3, 1, 2, 3],
+//     "Exercise 85"
+// );
