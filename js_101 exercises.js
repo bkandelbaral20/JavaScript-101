@@ -1184,3 +1184,32 @@ return varName.year_published;
 
 // assert(getYearPublished(tukeyPaper), 1962, "Exercise 88");
 // assert(getYearPublished(thomasPaper), 2008, "Exercise 88");
+
+// this code defines a JS object with information about a book.
+
+const book = {
+        title: "Genetic Algorithms and Machine Learning for Programmers",
+        price: 36.99,
+        author: "Frances Buontempo"
+};
+
+// Exercise 89
+// Write a function named getPrice that takes in a object and returns the price
+
+function getPrice(book){
+        return book.price;
+}
+console.log(getPrice(book));
+
+
+// assert(getPrice(book), 36.99, "Exercise 89");
+
+// Exercise 90
+// Write a function named getBookAuthor that takes in a object (the above declared book variable) and returns the author's name
+
+function getBookAuthor(book) {
+        return book.author;
+}
+console.log(getBookAuthor(book));
+
+//assert(getBookAuthor(book), "Frances Buontempo", "Exercise 90");
