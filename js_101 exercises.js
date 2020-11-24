@@ -1213,3 +1213,37 @@ function getBookAuthor(book) {
 console.log(getBookAuthor(book));
 
 //assert(getBookAuthor(book), "Frances Buontempo", "Exercise 90");
+
+// The next exercises work with a arrays of objects.
+// You'll see arrays of objects over and over again with data in a program.
+// Here is our arrays of objects.
+const books = [
+        {
+                title: "Genetic Algorithms and Machine Learning for Programmers",
+                price: 36.99,
+                author: "Frances Buontempo"
+        },
+        {
+                title: "The Visual Display of Quantitative Information",
+                price: 38.0,
+                author: "Edward Tufte"
+        },
+        {
+                title: "Practical Object-Oriented Design",
+                author: "Sandi Metz",
+                price: 30.47
+        },
+        {
+                title: "Weapons of Math Destruction",
+                author: "Cathy O'Neil",
+                price: 17.44
+        }
+];
+
+// Exercise 91
+// Write a function named getNumberOfBooks that takes in a array of objects and returns the number of objects in that array.
+
+function getNumberOfBooks(books){
+        return books.length;
+}
+
