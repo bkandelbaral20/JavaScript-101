@@ -1247,3 +1247,17 @@ function getNumberOfBooks(books){
         return books.length;
 }
 
+// Exercise 92
+// Write a function named totalOfBookPrices that takes in a array of objects and returns the sum
+// total of all the book prices added together
+
+function totalOfBookPrices(books){
+        var totalPrice= 0;
+        for(var i=0; i<books.length;i++){
+                totalPrice += books[i];
+        }
+        return totalPrice;
+}
+console.log(totalOfBookPrices(books));
+
+// assert(totalOfBookPrices(books), 122.9, "Exercise 92");
