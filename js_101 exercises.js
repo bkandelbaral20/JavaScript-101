@@ -1254,10 +1254,21 @@ function getNumberOfBooks(books){
 function totalOfBookPrices(books){
         var totalPrice= 0;
         for(var i=0; i<books.length;i++){
-                totalPrice += books[i];
+                totalPrice += books[i].price;
         }
         return totalPrice;
 }
 console.log(totalOfBookPrices(books));
 
 // assert(totalOfBookPrices(books), 122.9, "Exercise 92");
+
+// Exercise 93
+// Write a function named getAverageBookPrice that takes in a array of objects and returns the average book price.
+function getAverageBookPrice(books){
+        var totalPrice= 0;
+        for(var i=0; i<books.length;i++){
+                totalPrice += books[i].price;
+        }
+        return totalPrice/books.length;
+}
+console.log(getAverageBookPrice(books));
