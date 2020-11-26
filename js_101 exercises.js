@@ -1272,3 +1272,28 @@ function getAverageBookPrice(books){
         return totalPrice/books.length;
 }
 console.log(getAverageBookPrice(books));
+
+// assert(getAverageBookPrice(books), 30.725, "Exercise 93");
+
+// Exercise 94
+// Write a function called highestPriceBook that takes in the above defined array of objects "books" and returns the
+// object containing the title, price, and author of the book with the highest priced book.
+// Hint: Much like sometimes start functions with a variable set to zero, you may want to create a object
+// with the price set to zero to compare to each object's price in the array
+
+function highestPriceBook(books) {
+   //     arranging array object in ascending order
+   books.sort();
+   return books[1];
+}
+console.log(highestPriceBook(books));
+
+// assert(
+//     highestPriceBook(books),
+//     {
+//             title: "The Visual Display of Quantitative Information",
+//             price: 38.0,
+//             author: "Edward Tufte"
+//     },
+//     "Exercise 94"
+// );
