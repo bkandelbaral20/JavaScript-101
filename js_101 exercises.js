@@ -1426,3 +1426,47 @@ return totalPrice / numberOfItemTypes(shoppingCart);
 }
 
 // assert(getAverageItemPrice(shoppingCart), 2.1420000000000003, "Exercise 99");
+
+// Exercise 100
+// Write a function named getAverageSpentPerItem that takes in the shopping cart and returns the average of summing each item's quanties times that item's price.
+// Hint: You may need to set an initial total price and total total quantity to zero, then sum up and divide that total price by the total quantity
+
+function getAverageSpentPerItem(shoppingCart) {
+        var totalPrices = 0;
+        for (var i = 0; i < shoppingCart.items.length; i++) {
+                totalPrices += shoppingCart.items[i].price * shoppingCart.items[i].quantity;
+        }
+        var quantities = totalNumberOfItems(shoppingCart);
+        return totalPrices / quantities;
+}
+
+//assert(getAverageSpentPerItem(shoppingCart), 1.333529411764706, "Exercise 100");
+
+// Exercise 101
+// Write a function named mostSpentOnItem that takes in the shopping cart as input and returns the object associated with the item that has the highest price*quantity.
+// Be sure to do this as programmatically as possible.
+// Hint: Similarly to how we sometimes begin a function with setting a variable to zero, we need a starting place:
+// Hint: Consider creating a variable that is a object with the keys "price" and "quantity" both set to 0. You can then compare each item's price and quantity total to the one from "most"
+
+function mostSpentOnItem(shoppingCart) {
+        var highestPrice = 0;
+        var j = 0;
+        for (var i = 0; i < shoppingCart.items.length; i++) {
+                if (highestPrice < shoppingCart.items[i].price * shoppingCart.items[i].quantity) {
+                        highestPrice = shoppingCart.items[i].price * shoppingCart.items[i].quantity;
+                        j = i;
+                }
+        }
+        return shoppingCart.items[j];
+}
+
+// assert(
+//     mostSpentOnItem(shoppingCart),
+//     {
+//             title: "chocolate",
+//             price: 0.75,
+//             quantity: 9
+//     },
+//     "Exercise 101"
+// );
+// addToDone("Exercise 101 is complete.");
