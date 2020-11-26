@@ -1389,3 +1389,40 @@ function getTaxRate(shoppingCart) {
 console.log(getTaxRate(shoppingCart));
 
 // assert(getTaxRate(shoppingCart), 0.08, "Exercise 96");
+
+// Exercise 97
+// Write a function named numberOfItemTypes that takes in the shopping cart as input and returns the number of unique item types in the shopping cart.
+// We're not yet using the quantity of each item, but rather focusing on determining how many different types of items are in the cart.
+
+function numberOfItemTypes(shoppingCart) {
+        return shoppingCart.items.length;
+}
+
+// assert(numberOfItemTypes(shoppingCart), 5, "Exercise 97");
+
+// Exercise 98
+// Write a function named totalNumberOfItems that takes in the shopping cart as input and returns the total number all item quantities.
+// This should return the sum of all of the quantities from each item type
+
+function totalNumberOfItems(shoppingCart) {
+        var totalQuantities = 0;
+        for (var i=0; i<shoppingCart.items.length;i++){
+                totalQuantities += shoppingCart.items[i].quantity;
+        }
+        return totalQuantities;
+}
+// assert(totalNumberOfItems(shoppingCart), 17, "Exercise 98");
+
+// Exercise 99
+// Write a function named getAverageItemPrice that takes in the shopping cart as an input and returns the average of all the item prices.
+// Hint - This should determine the total price divided by the number of types of items. This does not account for each item type's quantity.
+
+function getAverageItemPrice(shoppingCart) {
+var totalPrice = 0;
+for(var i=0; i<shoppingCart.items.length; i++){
+        totalPrice += shoppingCart.items[i].price;
+}
+return totalPrice / numberOfItemTypes(shoppingCart);
+}
+
+// assert(getAverageItemPrice(shoppingCart), 2.1420000000000003, "Exercise 99");
